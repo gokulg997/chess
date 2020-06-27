@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <title>chess</title>
+    <head>
+        <script src="script.js"></script>
+        <style type="text/css">
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+            height: 560px;
+            width: 560px;
+           
+            border: 8px solid brown;
+        }
+        .div1{
+            height: 70px;
+            width: 70px;
+        }
+    
+       
+        </style>
+    </head>
+    <body>
+       <div class="container">
+           <div class="player1">
+               <h1>Player 1</h1>
+               <input type="text" id="play1" />
+               <button onclick="move();">Submit</button>
+               <h3 id="position"></h3>
+           </div>
+    <div class="main">
+        
+        <div class="div1" id="block1" style="background-color: white;"><img src="queen1.png" alt="G" id="img"></div>
+        <div class="div1" id="block2" style="background-color: burlywood;"></div>
+        <div class="div1" id="block3" style="background-color: white;"></div>
+        <div class="div1" id="block4" style="background-color: burlywood;"></div>
+        <div class="div1" id="block5" style="background-color: white;"></div>
+        <div class="div1" id="block6" style="background-color: burlywood;"></div>
+        <div class="div1" id="block7" style="background-color: white;"></div>
+        <div class="div1" id="block8" style="background-color: burlywood;"></div>
+
+        <div class="div1" id="block9" style="background-color:burlywood;"></div>
+        <div class="div1" id="block10" style="background-color: white;"></div>
+        <div class="div1" id="block11" style="background-color: burlywood;"></div>
+        <div class="div1" id="block12" style="background-color: white;"></div>
+        <div class="div1" id="block13" style="background-color: burlywood;"></div>
+        <div class="div1" id="block14" style="background-color: white;"></div>
+        <div class="div1" id="block15" style="background-color: burlywood;"></div>
+        <div class="div1" id="block16" style="background-color: white;"></div>
+
+        <div class="div1" id="block17" style="background-color: white;"></div>
+        <div class="div1" id="block18" style="background-color: burlywood;"></div>
+        <div class="div1" id="block19" style="background-color: white;"></div>
+        <div class="div1" id="block20" style="background-color: burlywood;"></div>
+        <div class="div1" id="block21" style="background-color: white;"></div>
+        <div class="div1" id="block22" style="background-color: burlywood;"></div>
+        <div class="div1" id="block23" style="background-color: white;"></div>
+        <div class="div1" id="block24" style="background-color: burlywood;"></div>
+
+        <div class="div1" id="block25" style="background-color:burlywood;"></div>
+        <div class="div1" id="block26" style="background-color: white;"></div>
+        <div class="div1" id="block27" style="background-color: burlywood;"></div>
+        <div class="div1" id="block28" style="background-color: white;"></div>
+        <div class="div1" id="block29" style="background-color: burlywood;"></div>
+        <div class="div1" id="block30" style="background-color: white;"></div>
+        <div class="div1" id="block31" style="background-color: burlywood;"></div>
+        <div class="div1" id="block32" style="background-color: white;"></div>
+
+        <div class="div1" id="block33" style="background-color: white;"></div>
+        <div class="div1" id="block34" style="background-color: burlywood;"></div>
+        <div class="div1" id="block35" style="background-color: white;"></div>
+        <div class="div1" id="block36" style="background-color: burlywood;"></div>
+        <div class="div1" id="block37" style="background-color: white;"></div>
+        <div class="div1" id="block38" style="background-color: burlywood;"></div>
+        <div class="div1" id="block39" style="background-color: white;"></div>
+        <div class="div1" id="block40" style="background-color: burlywood;"></div>
+
+        <div class="div1" id="block41" style="background-color:burlywood;"></div>
+        <div class="div1" id="block42" style="background-color: white;"></div>
+        <div class="div1" id="block43" style="background-color: burlywood;"></div>
+        <div class="div1" id="block44" style="background-color: white;"></div>
+        <div class="div1" id="block45" style="background-color: burlywood;"></div>
+        <div class="div1" id="block46" style="background-color: white;"></div>
+        <div class="div1" id="block47" style="background-color: burlywood;"></div>
+        <div class="div1" id="block48" style="background-color: white;"></div>
+
+        <div class="div1" id="block49" style="background-color: white;"></div>
+        <div class="div1" id="block50" style="background-color: burlywood;"></div>
+        <div class="div1" id="block51" style="background-color: white;"></div>
+        <div class="div1" id="block52" style="background-color: burlywood;"></div>
+        <div class="div1" id="block53" style="background-color: white;"></div>
+        <div class="div1" id="block54" style="background-color: burlywood;"></div>
+        <div class="div1" id="block55" style="background-color: white;"></div>
+        <div class="div1" id="block56" style="background-color: burlywood;"></div>
+
+        <div class="div1" id="block57" style="background-color:burlywood;"></div>
+        <div class="div1" id="block58" style="background-color: white;"></div>
+        <div class="div1" id="block59" style="background-color: burlywood;"></div>
+        <div class="div1" id="block60" style="background-color: white;"></div>
+        <div class="div1" id="block61" style="background-color: burlywood;"></div>
+        <div class="div1" id="block62" style="background-color: white;"></div>
+        <div class="div1" id="block63" style="background-color: burlywood;"></div>
+        <div class="div1" id="block64" style="background-color: white;"></div>
+
+       
+    </div>
+    
+</div>
+    </body>
+</html>
